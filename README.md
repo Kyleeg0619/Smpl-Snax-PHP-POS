@@ -1,1 +1,2 @@
 # Smpl-Snax-PHP-POS
+Smpl-Snax-PHP-POS is a lightweight ordering system built as a hands-on project while exploring the fundamentals of PHP and browser cookies. Designed with simplicity in mind, it features intuitive ordering functionality and a sprinkle of CSS animations to add visual flair. Whether you're diving into PHP for the first time or just hungry for a clean, snack-themed POS demo, this project serves up a tasty example of dynamic web interaction.
