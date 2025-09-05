@@ -1,0 +1,226 @@
+:root {
+    --maroon: #473f34;
+    --olive: #8c9657;
+    --cream: #f0e5c7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--maroon);
+    font-family: "countach", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cream);
+}
+
+header {
+    background: var(--cream);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+header p {
+    font-family: "countach", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--maroon);
+    z-index: 10;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+.headerText {
+    display: block;
+    font-family: "mighty-slab", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: var(--olive);
+    z-index: 1;
+    margin: 0 10px;
+}
+
+#headerImg {
+    position: absolute;
+    height: 250px;
+    width: 50%;
+    object-fit: cover;
+    object-position: 0 -20px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25%;
+    z-index: 0;
+}
+
+.order {
+    max-width: 765px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    min-height: 500px;
+    position: relative;
+}
+
+.menuImgs img {
+    display: block;
+}
+
+.menuImgs {
+    display: block;
+    height: 250px;
+}
+
+#cookies {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border: 10px solid var(--cream);
+    border-radius: 25px;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    z-index: 1;
+}
+
+#cake-image {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border: 10px solid var(--cream);
+    border-radius: 25px;
+    position: absolute;
+    top: 40%;
+    left: 180px;
+    z-index: 2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+    background: var(--olive);
+    border-radius: 25px;
+    font-size: 30px;
+}
+
+#submit {
+        font-family: "countach", sans-serif;
+        display: block;
+        border: none;
+        background: var(--cream);
+        color: var(--maroon);
+        border-radius: 25px;
+        margin: 10px auto 0 auto;
+        padding: 8px 10px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+#order {
+    display: flex;
+    background-image: url("images/cafe-background.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.receipt {
+    font-family: "mighty-slab", serif;
+    display: block;
+    margin: 0 auto;
+    background: var(--maroon);
+    min-height: 200px;
+    width: 400px;
+    align-content: center;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    border-radius: 25px;
+}
+
+.food-icons {
+    display: flex;
+    position: absolute;
+    bottom: -40px;
+    width: 400px;
+    justify-content: center;
+    left: 0;
+}
+
+.food-icons img {
+    display: none;
+    height: 65px;
+    width: 65px;
+    margin: 10px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  } 
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#bread, #donut, #cake, #cookie, #muffin {
+    display: block;
+    animation-name: float;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transition: transform 1s;
+}
+
+#donut {
+    animation-delay: 1.5s;
+}
+
+#cake {
+    animation-delay: 0.5s;
+}
+
+#cookie {
+    animation-delay: 1s;
+}
+
+#muffin {
+    animation-delay: 2s;
+}
+
+@media screen and (min-width: 1080px) {
+    .order {
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    height: max-content;
+    position: relative;
+    }
+
+    form {
+        height: 400px;
+        justify-content: center;
+        align-content: space-between;
+    }
+
+    form div {
+        display: block;
+    }
+
+}
