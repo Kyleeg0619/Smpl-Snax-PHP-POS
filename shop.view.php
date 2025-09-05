@@ -50,5 +50,8 @@
             <input type="submit" value="Submit" id="submit">
         </form>
     </section>
+    <h2 style="text-align: center;margin:20px"><?php if ($_COOKIE['lastOrdered']) {
+    echo $_COOKIE['lastOrdered'];
+} ?></h2>
 </body>
 </html>
